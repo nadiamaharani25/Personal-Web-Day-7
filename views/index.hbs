@@ -1,0 +1,417 @@
+<html>
+
+<head>
+    <title>Personal Web Bootstrap</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="/public/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href=" https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <script>
+        // Paragraf
+        let paragraf = document.getElementsByClassName("card-text");
+        console.log(paragraf);
+
+        setInterval(function () {
+            paragraf[0].style.color = "rgb(241, 113, 218)";
+
+            setTimeout(function () {
+                paragraf[0].style.color = "black";
+            }, 500)
+
+        }, 900);
+
+        // Welcome To My Hut
+        let cardtitle = document.getElementsByClassName("card-title");
+        console.log(cardtitle);
+
+        setInterval(function () {
+            cardtitle[0].style.color = "green";
+
+            setTimeout(function () {
+                cardtitle[0].style.color = "rgb(221, 46, 104)";
+            }, 300)
+
+        }, 500);
+    </script>
+
+
+    <!-- First Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light shadow-sm fixed-top" style="background-color: rgb(253, 238, 241);">
+        <div class="container">
+            <a class="navbar-brand me-5" href="/"><img src="/public/assets/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link active me-3 fw-bold" href="/">Home <span
+                                class=" sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/add-project">Add Project</a>
+                    </li>
+                </ul>
+                {{#if isLogin}}
+                <span class="user-name">
+                    {{user.name}}
+                </span>
+                <span class="line"> | </span>
+                <a href="/logout" class="btn auth-logout fw-bold">Logout</a>
+                {{else}}
+                <a href="/register" class="btn btn-auth fw-bold">Register</a>
+                <a href="/login" class="btn btn-auth fw-bold">Login</a>
+                {{/if}}
+
+                <a href="/contact-me" class="btn btn-danger btn-sm text-white">Contact Me</a>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+
+    <!-- Container -->
+    <div class="container">
+        <!-- First Card -->
+        <div class="card" style="max-width: 100%; height: auto;">
+            <div class="row g-0">
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h2 class="card-title fw-bold" style="margin-top: 20px;">Hi Welcome to My Hut</h2>
+                        <p class="card-text pt-3" style="text-align: justify;">Hai,
+                            Saya Nadia Maharani. Saya berasal dari Palembang, Sumatera Selatan. Saya punya mimpi untuk
+                            bisa
+                            menjadi seorang programmer, baik itu
+                            Frontend, Backend, bahkan Fullstack Developer. Saya ingin bekerja sebagai seorang programmer
+                            /
+                            developer dan bekerja di sebuah perusahaan startup. Dan Saya juga punya mimpi untuk bisa
+                            mendirikan
+                            perusahaan startup sendiri.
+                            Saya ingin untuk kedepannya nanti, Saya bisa menciptakan suatu aplikasi yang menarik dan
+                            bermanfaat
+                            untuk banyak
+                            orang.</p>
+
+                        <button type=" button" class="btn btn-sm">
+                            <a href="https://instagram.com">contact</a></button>
+
+                        <div class="download">
+                            <p>download CV</p>
+                            <a href="https://instagram.com"><img src="/public/assets/download.png" class="img_download"
+                                    width="17px"></a>
+                        </div>
+
+                        <!-- Card Icon -->
+                        <div class="card-icon d-flex" style="justify-content: flex-start;">
+                            <div class="icon">
+                                <a href="https://www.linkedin.com/">
+                                    <img src="/public/assets/linkedin.png" alt="" width="43px"
+                                        style="margin-right: 27px;"></a>
+                            </div>
+
+                            <div class="icon">
+                                <a href="https://www.instagram.com/">
+                                    <img src="/public/assets/instagram.png" alt="" width="43px"
+                                        style="margin-right: 27px;"></a>
+                            </div>
+
+                            <div class="icon">
+                                <a href="https://id-id.facebook.com/">
+                                    <img src="/public/assets/facebook.png" alt="" width="43px"
+                                        style="margin-right: 30px;"></a>
+                            </div>
+
+                            <div class="icon">
+                                <a href="https://twitter.com/i/flow/login">
+                                    <img src="/public/assets/twitter.png" alt="" width="43px"
+                                        style="margin-right: 27px;"></a>
+                            </div>
+                        </div>
+                        <!-- Card Icon -->
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="box">
+                        <img src="/public/assets/nadia.jpg" class="img-fluid" alt="">
+                        <h3>Nadia Maharani</h3>
+                        <p class="job" style="font-size: 10pt; margin-top: -10px;">
+                            Fullstack
+                            Developer</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Card -->
+    </div>
+    <!-- End Container -->
+
+
+    <!-- Project List -->
+    <div class="container-content" style="margin: auto; align-items: flex-start; justify-content: flex-start;">
+        <h2 class="text-center fw-bold" style="padding-top: 90px;  margin-bottom: 30px; ">MY PROJECT</h2>
+
+        <!-- Add New Blog -->
+        <div class="container-btn-add-new-project">
+            {{#if isLogin}}
+            <a href="/add-project"><button type="button" class="btn btn-danger"
+                    style="margin-top: 70px; color: white; margin-left: 40px;">Add New Project</button></a>
+            {{/if}}
+        </div>
+        <!-- Add New Blog -->
+
+        <!-- Contents -->
+        <div id="contents" class="blog-list" style="margin: auto; align-items: center; justify-content: center;">
+            <!-- First Row -->
+            <div class="row">
+                <!-- Blog List Item 1 -->
+                <div class="col-md-4 my-3">
+                    <div class="card blog-list-item" style="width: 25rem; height: 39rem;">
+
+                        <div class="blog-image text-center" style="justify-content: center; align-items: center;">
+                            <img src=" /public/assets/code.jpg" class="card-img-top" alt="...">
+                        </div>
+
+                        <h4 class="card-title"><a href="/project-detail/99" target="_blank"
+                                style="text-decoration: none;">Dumbways
+                                Mobile App-2022</a>
+                        </h4>
+                        <h5>
+                            durasi: 1 week
+                        </h5>
+
+                        <div class="detail-blog-content mt-5">
+                            <p class="card-text">App that used for dumbways student, if was deployed and can downloaded
+                                on
+                                playstore. Happy Download.
+                            </p>
+
+                            <div style="text-align: right; margin-top: 10px; color: gray;">
+                                1 hours ago
+                            </div>
+
+                            <div class="icon" style="margin-top: 10px;">
+                                <img src="/public/assets/react.png" alt=""
+                                    style="width: 45px; margin-left: -20px; margin-right: 10px;">
+                                <img src="/public/assets/node.png" alt="" style="width: 43px; margin-right: 10px;">
+                                <img src="/public/assets/next.png" alt="" style="width: 41px; margin-right: 17px;">
+                                <img src="/public/assets/typescript.png" alt=""
+                                    style="width: 35px; margin-right: 10px;">
+                            </div>
+
+                            <div class="blog-content">
+                                <div class="button-group">
+                                    <a href="#" class="button-edit">edit</a>
+                                    <a href="#" class="button-delete">delete</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Blog List Item 1 -->
+
+                <!-- Blog List Item 2 -->
+                <div class="col-md-4 my-3">
+                    <div class="card blog-list-item" style="width: 25rem; height: 39rem;">
+                        <div class="blog-image">
+                            <img src="/public/assets/mobile.jpg" class="card-img-top" alt="...">
+                        </div>
+
+                        <h4 class="card-title"><a href="/project-detail" target="_blank"
+                                style="text-decoration: none;">Dumbways
+                                Mobile App-2022</a>
+                        </h4>
+                        <h5>
+                            durasi: 1 week
+                        </h5>
+
+                        <div class="detail-blog-content mt-5">
+                            <p class="card-text">App that used for dumbways student, if was deployed and can downloaded
+                                on
+                                playstore. Happy Download.
+                            </p>
+
+                            <div style="text-align: right; margin-top: 10px; color: gray;">
+                                1 hours ago
+                            </div>
+
+                            <div class="icon" style="margin-top: 10px;">
+                                <img src="/public/assets/react.png" alt=""
+                                    style="width: 45px; margin-left: -20px; margin-right: 10px;">
+                                <img src="/public/assets/node.png" alt="" style="width: 43px; margin-right: 10px;">
+                                <img src="/public/assets/next.png" alt="" style="width: 41px; margin-right: 17px;">
+                                <img src="/public/assets/typescript.png" alt=""
+                                    style="width: 35px; margin-right: 10px;">
+                            </div>
+
+                            <div class="blog-content">
+                                <div class="button-group">
+                                    <a href="#" class="button-edit">edit</a>
+                                    <a href="#" class="button-delete">delete</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Blog List Item 2 -->
+
+                <!-- Blog List Item 3 -->
+                <div class="col-md-4 my-3">
+                    <div class="card blog-list-item" style="width: 25rem; height: 39rem;">
+                        <div class="blog-image">
+                            <img src="/public/assets/coding.jpg" class="card-img-top" alt="...">
+                        </div>
+
+                        <h4 class="card-title"><a href="/project-detail" target="_blank"
+                                style="text-decoration: none;">Dumbways
+                                Mobile
+                                App-2022</a>
+                        </h4>
+                        <h5>
+                            durasi: 1 week
+                        </h5>
+
+                        <div class="detail-blog-content mt-5">
+                            <p class="card-text">App that used for dumbways student, if was deployed and can downloaded
+                                on
+                                playstore. Happy Download.
+                            </p>
+
+                            <div style="text-align: right; margin-top: 10px; color: gray;">
+                                1 hours ago
+                            </div>
+
+                            <div class="icon" style="margin-top: 10px;">
+                                <img src="/public/assets/react.png" alt=""
+                                    style="width: 45px; margin-left: -20px; margin-right: 10px;">
+                                <img src="/public/assets/node.png" alt="" style="width: 43px; margin-right: 10px;">
+                                <img src="/public/assets/next.png" alt="" style="width: 41px; margin-right: 17px;">
+                                <img src="/public/assets/typescript.png" alt=""
+                                    style="width: 35px; margin-right: 10px;">
+                            </div>
+
+                            <div class="blog-content">
+                                <div class="button-group">
+                                    <a href="#" class="button-edit">edit</a>
+                                    <a href="#" class="button-delete">delete</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Blog List Item 3 -->
+
+
+                <!-- Blog List Item 4 -->
+                {{#each projects}}
+                <div class="col-md-4 my-3">
+                    <div class="card blog-list-item" style="width: 25rem; height: 35rem;">
+
+                        <div class="blog-image text-center" style="justify-content: center; align-items: center;">
+                            {{!-- <img src=" /public/assets/code.jpg" class="card-img-top" alt="..."> --}}
+                            <img src={{this.image}} class="card-img-top" alt="...">
+                        </div>
+
+                        <h4 class="card-title"><a href="/project-detail/{{this.id}}" target="_blank"
+                                style="text-decoration: none;">{{this.title}}</a>
+                        </h4>
+                        <h5>
+                            {{this.time}}
+                            |
+                            {{#if this.author.name}}
+                            {{this.author.name}}
+                            {{else}}
+                            ❌🙎‍♂️
+                            {{/if}}
+                        </h5>
+
+                        <div class="detail-blog-content mt-5">
+                            <p class="card-text">{{this.description}}
+                            </p>
+
+                            <div style="text-align: right; margin-top: 10px; color: gray;">
+
+                            </div>
+
+
+                            <!-- ICON -->
+                            <div class="icon" style="margin-top: 10px;">
+                                {{!-- <img src="{{this.checkbox1}}" alt="">
+                                <a href=""><img src="{{this.icon}}" alt=""></a>
+                                <a href=""><img src="{{this.icon}}" alt=""></a> --}}
+                                {{#if this.react}}
+                                <span><img src="/public/assets/react.png" style="width: 50px;" alt="">
+                                </span>
+                                {{/if}}
+
+                                {{#if this.next}}
+                                <span><img src="/public/assets/next.png" style="width: 40px;" alt="">
+                                </span>
+                                {{/if}}
+
+                                {{#if this.node}}
+                                <span><img src="/public/assets/node.png" style="width: 40px;" alt="">
+                                </span>
+                                {{/if}}
+
+                                {{#if this.typescript}}
+                                <span><img src="/public/assets/typescript.png" style="width: 40px;" alt="">
+                                </span>
+                                {{/if}}
+                            </div>
+
+                            <div class="blog-content">
+                                {{#if isLogin}}
+                                <div class="button-group">
+                                    <a href="/update-project/{{this.id}}" class="button-edit">edit</a>
+                                    <a href="/delete-project/{{this.id}}" class="button-delete">delete</a>
+                                </div>
+                                {{/if}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {{/each}}
+                <!-- Blog List Item 4 -->
+
+            </div>
+            <!-- End Row -->
+        </div>
+        <!-- Contents -->
+    </div>
+    <!-- Project List -->
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src="add-project.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    -->
+
+</body>
+
+</html>

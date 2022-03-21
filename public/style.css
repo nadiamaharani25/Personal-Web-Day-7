@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(239, 240, 243) !important;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+/* Contact Me */
+.btn-daanger {
+    border-radius: 8px !important;
+    padding: 5px 15px !important;
+}
+
+/* Register, Login */
+.btn-auth {
+    text-decoration: none;
+    margin-right: 30px;
+    font-size: normal;
+    font-weight: 600;
+}
+
+/* Logout */
+.auth-logout {
+    margin-left: 10px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: rgb(228, 59, 115) !important;
+}
+
+
+.user-name {
+    color: black;
+    margin-right: 10px;
+    font-size: normal;
+    font-weight: 600;
+}
+
+.line {
+    color: black;
+    margin-right: 2px;
+    margin-left: 10px;
+    font-size: normal;
+    font-weight: 600;
+}
+
+/* CARD-PROFILE */
+.card {
+    margin: auto;
+    margin-top: 120px;
+    margin-bottom: 70px;
+    background-color: white;
+    box-shadow: 2px 5px 2px 3px rgb(180, 180, 180);
+    padding: 60px;
+    height: auto;
+}
+
+.card p {
+    font-size: 17px;
+}
+
+.box {
+    margin: auto;
+    margin-top: 15px;
+    border: 1px solid black;
+    box-shadow: 3px 2px 1px rgb(199, 198, 198);
+    border-radius: 8px;
+    width: 95%;
+    height: 450px !important;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.img-fluid {
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 5px;
+    width: 100%;
+    height: 85% !important;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+/* contact */
+.card .btn {
+    background-color: green;
+    border: none;
+    padding: 5px 26px;
+    border-radius: 50px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.card .btn a {
+    color: white;
+    text-decoration: none;
+    font-size: 11pt;
+}
+
+/* download */
+.download {
+    font-size: 12pt;
+    margin-left: 140px;
+    margin-top: -30px;
+}
+
+.img_download {
+    margin-left: 120px;
+    margin-top: -40px;
+    cursor: pointer;
+}
+
+/* card-icon */
+.card .card-icon {
+    cursor: pointer;
+    margin-top: 50px;
+    margin-left: auto;
+    text-align: center;
+}
+
+.card .card-icon a {
+    cursor: pointer;
+    margin: auto;
+}
+
+
+/*  ============================================================= */
+
+/* BLOG LIST */
+.container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-content {
+    background-color: white;
+    margin-top: 70px;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+/* MY PROJECT */
+.container-content {
+    margin: auto;
+    padding: 0;
+}
+
+.container-content h2 {
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: auto;
+    text-align: center;
+}
+
+.container #contents {
+    background-color: rgb(241, 113, 218);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Mengatur Margin Top dan Padding Antar Card */
+.container-content .blog-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 130px;
+    padding: 0px 30px;
+}
+
+/* Mengatur Margin Bottom Antar Card */
+.container-content .blog-list .card {
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.container-content .blog-list .card blog-list-item {
+    flex-wrap: wrap;
+    box-shadow: 2px 1px 2px 1px rgb(116, 115, 115);
+}
+
+.container-content .blog-list .card blog-list-item .blog-image {
+    flex: 1;
+}
+
+/* Untuk Mengatur Margin Top Image */
+.container-content .blog-list .blog-image img {
+    width: 24rem;
+    margin: auto;
+    margin-left: -53px;
+    margin-top: 5px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.container-content .blog-list .card blog-list-item .blog-content {
+    padding-left: 10px;
+    flex: 3;
+}
+
+/* Dumbways App - 2022 */
+.container-content .blog-list h4 {
+    text-align: left;
+    align-items: flex-start;
+    font-size: 20px;
+    margin-top: 15px;
+    margin-left: -30px;
+}
+
+.container-content .blog-list h4 a {
+    color: black;
+}
+
+/* Durasi */
+.container-content .blog-list-item h5 {
+    color: rgb(114, 113, 113);
+    font-size: 12pt;
+    margin-left: -30px;
+    text-align: left;
+    font-weight: normal;
+}
+
+/* Paragraf */
+.container-content .blog-list .blog-list-item p {
+    margin-top: -30px;
+    margin-left: -30px;
+    font-weight: normal;
+    font-size: 14px;
+    text-align: justify;
+    color: black;
+}
+
+.container-content .blog-list .detail-blog-content p {
+    text-decoration: none;
+    color: black;
+}
+
+.container-content .blog-list .card blog-list-item .icon {
+    display: flex;
+    font-size: 50px;
+    color: black;
+}
+
+.container-content .blog-list .icon i {
+    display: flex;
+}
+
+/* Button Edit & Delete */
+.blog-list .button-group {
+    display: flex;
+    margin-bottom: 10px;
+    margin-top: 75px;
+}
+
+.container-content .blog-list .button-group .button-edit {
+    flex: 50%;
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 8px;
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    margin: auto;
+    margin-top: -50px;
+    text-align: center;
+    margin-left: -30px;
+    margin-right: 30px;
+}
+
+.container-content .blog-list .button-group .button-delete {
+    flex: 50%;
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 8px;
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    margin: auto;
+    margin-top: -50px;
+    text-align: center;
+    margin-left: -10px;
+    margin-right: -30px;
+}
+
+
+/* ===================================================================================== */
+/* BLOG DETAIL */
+.blog-detail {
+    justify-content: center;
+}
+
+.blog-detail-h {
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 40px;
+}
+
+.blog-detail-container {
+    display: flex;
+    margin: 30px 0;
+    height: 93vh;
+}
+
+.blog-detail-container .container-content-detail {
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    width: 80%;
+    height: 550px;
+}
+
+.blog-detail-container .left-side {
+    flex: 70%;
+    margin: auto;
+}
+
+.blog-detail-container .right-side {
+    flex: 30%;
+    margin-left: 50px;
+    padding-top: 50px;
+}
+
+.blog-detail-container img {
+    width: 100%;
+    margin: auto;
+}
+
+.blog-detail-container h1 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 44px;
+    line-height: 120%;
+    margin-bottom: 15px;
+}
+
+.blog-detail-container p {
+    margin-top: 40px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 140%;
+    text-align: justify;
+}
+
+.right-side .duration .calender img,
+.clock img {
+    width: 35px;
+    color: black;
+}
+
+.right-side .duration .calender p,
+.clock p {
+    margin-left: 50px;
+    margin-top: -30px;
+    color: rgb(114, 113, 113);
+}
+
+.blog-detail-container .container-content-detail .technologies {
+    padding-top: 15px;
+}
+
+.technologies .icon1 i {
+    font-size: 30px;
+    color: black;
+}
+
+.technologies .icon1 p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: inline;
+    color: rgb(114, 113, 113);
+    margin-left: 7px;
+    margin-right: 37px;
+}
+
+.technologies .icon2 i {
+    font-size: 27px;
+    color: black;
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-right: 37px;
+}
+
+.technologies .icon2 p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: inline;
+    color: rgb(114, 113, 113);
+    margin-left: 8px;
+}
+
+.blog-detail .card {
+    display: flex;
+    margin: auto;
+    margin-top: -100px;
+    width: 80%;
+}
+
+.blog-detail .card p {
+    width: 100%;
+    height: 400px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 140%;
+    text-align: justify;
+}
+
+
+/* ADD PROJECT */
+.container-form-blog {
+    width: 80%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+form {
+    width: 40%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 70px;
+}
+
+form input,
+textarea {
+    border-radius: 5px;
+    box-shadow: 2px 1px 2px 1px rgb(122, 122, 122);
+}
+
+form textarea {
+    height: 120px;
+}
+
+/* Media Query */
+@media screen and (max-width: 1000px) {
+
+    .navbar,
+    .container,
+    form {
+        width: 100%;
+        padding: 0;
+    }
+
+}
+
+@media screen and (max-width: 680px) {
+
+    .navbar,
+    .container,
+    form {
+        width: 100%;
+        padding: 0;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .navbar,
+    .container,
+    form {
+        width: 100%;
+        padding: 0;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    #contents,
+    .blog-list {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 680px) {
+
+    #contents,
+    .blog-list {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    #contents,
+    .blog-list {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    body {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 680px) {
+
+    body {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    body {
+        width: 100%;
+        padding: 0;
+    }
+}
