@@ -30,7 +30,6 @@ app.use('/uploads', express.static(__dirname + '/uploads'));
 app.use(express.urlencoded({ extended: false }));
 
 
-
 // Contact Me
 app.get('/contact-me', function (req, res) {
     res.render('contact-me');
